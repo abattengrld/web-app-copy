@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Characters from the Iliad.</h1>
+    <p>The Iliad by Homer is a long, long poem with at least 100 significant characters. This was made to help keep track of these characters. Some important characters have been added (oops, spoilers), and it is up to you to fill out the table as you go through the book. You can use the delete button to remove those that you don't like, or are uninteresting, or are dead. Up to you. The editing of comments will hopefully be fixed soon.</p>
+ 
+    <button id="addItemBtn">Add Item</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Actions</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Affiliation</th>
+                <th>Other Names</th>
+                <th>Species</th>
+                <th>Homeland</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody id="itemsTableBody"></tbody>
+    </table>
+    <div id="itemModal" class="hidden">
+        <h2 id="modalTitle"></h2>
+        <form id="itemForm">
+            <input type="hidden" id="itemId">
+            <label>Name: <input type="text" name="name"></label>
+            <label>Affiliation: <input type="text" name="affiliation"></label>
+            <label>Other Names: <input type="text" name="other_names"></label>
+            <label>Species: <input type="text" name="species"></label>
+            <label>Homeland: <input type="text" name="homeland"></label>
+            <label>Comments: <input type="text" name="comments"></label>
+            <button type="submit">Save</button>
+        </form>
+        <button class="close-btn">Close</button>
+    </div>
+    <script src="/scripts.js"></script>
+</body>
+</html>
