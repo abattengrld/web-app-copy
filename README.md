@@ -1,0 +1,1 @@
+this webpage is designed to make it easier for the readers of the iliad to keep track of the characters. Users can add and delete existing characters in the table. Ideally, they should also be able to edit specific column, but they cannot.
